@@ -24,22 +24,22 @@ A simple **Blog Application** built with **Node.js, Express.js, EJS, and Postgre
    git clone https://github.com/your-username/blog-app.git
    cd blog-app
 
-2. **Install dependencies**
-  ```bash
-  npm install
+2. Install dependencies
+   ```bash
+   npm install
 
-3. **Setup PostgreSQL Database**
-  ```sql
-  CREATE DATABASE blogdb;
+3. Setup PostgreSQL Database
+   ```sql
+   CREATE DATABASE blogdb;
 
-  CREATE TABLE posts (
+   CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     content TEXT NOT NULL,
     date DATE
   );
 
-4. **Configure database connection**
+4. Configure database connection
     ```js
     const db = new pg.Client({
     user: "your-username",
@@ -50,7 +50,7 @@ A simple **Blog Application** built with **Node.js, Express.js, EJS, and Postgre
     });
     db.connect();
 
-5. **Run the app**
+5. Run the app
    ```bash
    node index.js
 
