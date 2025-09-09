@@ -37,7 +37,7 @@ A simple **Blog Application** built with **Node.js, Express.js, EJS, and Postgre
     title VARCHAR(255) NOT NULL,
     content TEXT NOT NULL,
     date DATE
-  );
+    );
 
 4. Configure database connection
     ```js
