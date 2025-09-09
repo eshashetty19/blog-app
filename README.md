@@ -29,15 +29,15 @@ A simple **Blog Application** built with **Node.js, Express.js, EJS, and Postgre
   npm install
 
 3. **Setup PostgreSQL Database**
-```sql
-CREATE DATABASE blogdb;
+  ```sql
+  CREATE DATABASE blogdb;
 
-CREATE TABLE posts (
-  id SERIAL PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  content TEXT NOT NULL,
-  date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+  CREATE TABLE posts (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    date DATE
+  );
 
 4. **Configure database connection**
     ```js
