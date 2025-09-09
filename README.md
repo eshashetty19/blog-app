@@ -25,8 +25,8 @@ A simple **Blog Application** built with **Node.js, Express.js, EJS, and Postgre
    cd blog-app
 
 2. **Install dependencies**
-```bash
-npm install
+  ```bash
+  npm install
 
 3. **Setup PostgreSQL Database**
 ```sql
@@ -40,18 +40,18 @@ CREATE TABLE posts (
 );
 
 4. **Configure database connection**
-```js
-const db = new pg.Client({
-  user: "your-username",
-  host: "localhost",
-  database: "blogdb",
-  password: "your-password",
-  port: 5432,
-});
-db.connect();
+    ```js
+    const db = new pg.Client({
+    user: "your-username",
+    host: "localhost",
+    database: "blogdb",
+    password: "your-password",
+    port: 5432,
+    });
+    db.connect();
 
 5. **Run the app**
-```bash
-node index.js
+   ```bash
+   node index.js
 
 Now open  http://localhost:3000
